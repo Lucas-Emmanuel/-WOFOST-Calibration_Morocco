@@ -1,0 +1,28 @@
+Version: 1.0
+AgroManagement:
+- 2003-12-24:
+    CropCalendar:
+        crop_name: 'WWH107'
+        variety_name: 'WWH107'
+        crop_start_date: 2003-12-24
+        crop_start_type: sowing
+        crop_end_date: 2004-05-27
+        crop_end_type: harvest
+        max_duration: 300
+    TimedEvents:
+    -   event_signal: irrigate
+        name:  Timed irrigation events
+        comment: All irrigation amounts in cm
+        events_table:
+        - 2004-01-26: {amount: 6.0, efficiency: 0.7}
+        - 2004-02-21: {amount: 6.0, efficiency: 0.7}
+        - 2004-03-27: {amount: 6.0, efficiency: 0.7}
+    -   event_signal: apply_npk
+        name:  Timed N/P/K application table
+        comment: All fertilizer amounts in kg/ha
+        events_table:
+        - 2004-01-09: {N_amount : 0, P_amount: 14, K_amount: 07}
+        - 2004-01-11: {N_amount : 1.05, P_amount: 0, K_amount: 0}
+        - 2004-02-23: {N_amount : 2.8, P_amount: 0, K_amount: 0}
+        - 2004-04-20: {N_amount : 3.15, P_amount: 0, K_amount: 0}
+    StateEvents: null

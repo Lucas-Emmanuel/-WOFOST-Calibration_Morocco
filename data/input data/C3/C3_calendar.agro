@@ -1,0 +1,21 @@
+Version: 1.0
+AgroManagement:
+- 2003-01-01:
+    CropCalendar:
+        crop_name: 'WWH107'
+        variety_name: 'WWH107'
+        crop_start_date: 2003-01-14
+        crop_start_type: sowing
+        crop_end_date: 2003-05-27
+        crop_end_type: harvest
+        max_duration: 200
+    TimedEvents:
+    -   event_signal: irrigate
+        name:  Timed irrigation events
+        comment: All irrigation amounts in cm
+        events_table:
+        - 2003-02-04: {amount: 3.0, efficiency: 0.7}
+        - 2003-03-20: {amount: 3.0, efficiency: 0.7}
+        - 2003-04-13: {amount: 3.0, efficiency: 0.7}
+        - 2003-04-21: {amount: 3.0, efficiency: 0.7}
+    StateEvents: null
